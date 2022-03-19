@@ -9,8 +9,8 @@
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to MIthun Technologies - GitHub WebHook Demo</h1>
-<h1 align="center"> Welcome to Mithun Software Solutions.......We have a DevOps Master Program demo on March 5th at 7 PM IST for new batch. , This is a weekdays batch - 6 AM to 7.30 AM IST . MSS- Very Good Training center for DevOps with AWS in Maratha Halli and also for Job Assitance Job Support also...Teaching Real Time scnerios and use cases... Some fake guys are giving the fake reviews dont believe those guys..I am requesting everyone. Please give your reviews in FB and Google.</h1>
+<h1 align="center">Welcome to Tarun Technologies - GitHub WebHook Demo</h1>
+<h1 align="center"> Welcome to Tarun Software Solutions.......We have a DevOps Master Program demo on March 5th at 7 PM IST for new batch. , This is a weekdays batch - 6 AM to 7.30 AM IST . MSS- Very Good Training center for DevOps with AWS in Maratha Halli and also for Job Assitance Job Support also...Teaching Real Time scnerios and use cases... Some fake guys are giving the fake reviews dont believe those guys..I am requesting everyone. Please give your reviews in FB and Google.</h1>
 <hr>
 <div style="text-align: center;">
 	<span>
@@ -23,15 +23,15 @@
 		+91-9980923226,
 		devopstrainingbr@gmail.com
 		<br>
-		<a href="mailto:devopstrainingblr@gmail.com">Mail to Mithun Technologies</a>
+		<a href="tarunkumarvk3@gmail.com">Mail to Tarun Technologies</a>
 	</span>
 </div>
 <hr>
 	<p> Service : <a href="services/employee/getEmployeeDetails">Get Employee Details </p>
 <hr>
 <hr>
-<p align=center>Mithun Technologies - Consultant, Training, Development Center.</p>
-<p align=center><small>Copyrights 2021 by <a href="http://mithuntechnologies.com/">Mithun Technologies</a> </small></p>
+<p align=center>Tarun Technologies - Consultant, Training, Development Center.</p>
+<p align=center><small>Copyrights 2021 by <a href="http://mithuntechnologies.com/">Tarun Technologies</a> </small></p>
 
 </body>
 </html>
