@@ -3,6 +3,10 @@ echo "The build number is: ${env.BUILD_NUMBER}"
 echo "The Job name is: ${env.JOB_NAME}"
 def mavenTool = tool name: "maven3.8.5"
 
+properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), 
+[$class: 'JobLocalConfiguration', changeReasonComment: '']])
+
+
 //Git Clone
 stage('gitcloning'){
 git branch: 'development', credentialsId: '8cd7c7fe-d854-4b6e-82bc-9b9f3d8f7c7a', url: 
