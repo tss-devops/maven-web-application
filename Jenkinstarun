@@ -1,6 +1,4 @@
-
-
-node('pipelinescript'){
+node{
 
 def mavenTool = tool name: "maven3.8.5"
 
