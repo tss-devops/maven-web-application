@@ -4,7 +4,7 @@ echo "The Job name is: ${env.JOB_NAME}"
 def mavenTool = tool name: "maven3.8.5"
 
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), 
-[$class: 'JobLocalConfiguration', changeReasonComment: '']])
+[$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
 
 
 //Git Clone
