@@ -1,7 +1,6 @@
 node{
 echo "The build number is: ${env.BUILD_NUMBER}"
 echo "The Job name is: ${env.JOB_NAME}"
-
 def mavenTool = tool name: "maven3.8.5"
 
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), 
