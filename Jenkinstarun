@@ -4,7 +4,7 @@ echo "The Job name is: ${env.JOB_NAME}"
 def mavenTool = tool name: "maven3.8.5"
 properties([[$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([upstream('kpmg-dev, '), pollSCM('* * * * *')])])
 
-properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), 
+//properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), 
 [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
 
 
@@ -20,7 +20,7 @@ stage('Build'){
 sh "$mavenTool/bin/mvn package"
 
 }
-
+/*
 //Sonarqube report
 stage('Sonarqube report'){
 sh "$mavenTool/bin/mvn sonar:sonar"
@@ -37,5 +37,5 @@ sshagent(['e0e7aa23-a115-46d5-9f55-c9367027f691']) {
   sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.110.81.100:/opt/apache-tomcat-9.0.59/webapps"  
 }
 }
-
+*/
 }//node close
