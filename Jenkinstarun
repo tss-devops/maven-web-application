@@ -13,8 +13,8 @@ def SlacknotifyBuild(String buildStatus = 'STARTED') {
     color = 'YELLOW'
     colorCode = '#FFFF00'
   } else if (buildStatus == 'SUCCESSFUL') {
-    color = 'ORANGE'
-    colorCode = '#FFA500'
+    color = 'GREEN'
+    colorCode = '#00FF00'
   } else {
     color = 'RED'
     colorCode = '#FF0000'
@@ -65,9 +65,9 @@ sshagent(['e0e7aa23-a115-46d5-9f55-c9367027f691']) {
 }
 */
 try{
-
 //Git Clone
 stage('gitcloning'){
+SlacknotifyBuild('STARTED')
 git branch: 'development', credentialsId: '8cd7c7fe-d854-4b6e-82bc-9b9f3d8f7c7a', url: 
 'https://github.com/tss-devops/maven-web-application.git'
 
