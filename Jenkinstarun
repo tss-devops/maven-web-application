@@ -30,8 +30,8 @@ echo "The Job name is: ${env.JOB_NAME}"
 def mavenTool = tool name: "maven3.8.5"
 properties([[$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([upstream('kpmg-dev, '), pollSCM('* * * * *')])])
 
-  properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), 
-  [$class: 'JobLocalConfiguration', changeReasonComment: '']])
+properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), 
+[$class: 'JobLocalConfiguration', changeReasonComment: '']])
 
 
 //Git Clone
