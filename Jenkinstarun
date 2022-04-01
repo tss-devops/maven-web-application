@@ -65,16 +65,6 @@ sshagent(['e0e7aa23-a115-46d5-9f55-c9367027f691']) {
 }
 */
 try{
-node{
-echo "The build number is: ${env.BUILD_NUMBER}"
-echo "The Job name is: ${env.JOB_NAME}"
-def mavenTool = tool name: "maven3.8.5"
-properties([[$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([upstream('kpmg-dev, '), pollSCM('* * * * *')])])
-
-//properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), 
-//[$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
-
-
 //Git Clone
 stage('gitcloning'){
 git branch: 'development', credentialsId: '8cd7c7fe-d854-4b6e-82bc-9b9f3d8f7c7a', url: 
@@ -106,7 +96,7 @@ sshagent(['e0e7aa23-a115-46d5-9f55-c9367027f691']) {
 }
 */
 }//try closing
-catch (e) {
+catch(e){
 currentBuild.result = "FAILED"
 }
 finally{
