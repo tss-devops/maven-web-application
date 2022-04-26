@@ -99,13 +99,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Tarun Technologies Releases Nexus Repository</name>
-	      <url>http://35.154.92.134:8081/repository/oracle-release/</url>
+	      <url>http://15.206.186.66:8081/repository/oracle-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Tarun Technologies Snapshot Nexus Repository </name>
-	      <url>http://35.154.92.134:8081/repository/oracle-snapshot/</url>
+	      <url>http://15.206.186.66:8081/repository/oracle-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
